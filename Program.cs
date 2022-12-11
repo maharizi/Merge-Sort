@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-static List<int> DividingList(List<int> originalList) // Recursion function
+static List<int> DividingList(List<int> originalList) // Recursion function - dividing the original list until 1 number each list (left and rigth)
 {
     if (originalList.Count <= 1)  // Stopping conditions - when list becomes 1 element
         return originalList;
@@ -20,7 +20,7 @@ static List<int> DividingList(List<int> originalList) // Recursion function
     return Merge(left, right); // Sending to Merge - lists after dividing
 }
 
-static List<int> Merge(List<int> left, List<int> right)
+static List<int> Merge(List<int> left, List<int> right) // Comparison - left list with rigth list, and add to result
 {
     List<int> result = new List<int>(); //Creation - result list
 
