@@ -74,3 +74,11 @@ Console.WriteLine("Sorted array elements: ");
 foreach (int x in sorted) // Writing - sorted list
     Console.Write(x + " ");
 Console.WriteLine();
+
+/* Time Complexity: O(N log(N))
+ * 
+ * List => n element
+ * Recursion => dividing the list n/2 each time
+ * => O(N log(N))
+ * 
+*/
