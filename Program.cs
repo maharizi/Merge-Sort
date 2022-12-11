@@ -20,7 +20,7 @@ static List<int> DividingList(List<int> originalList) // Recursion function - di
     return Merge(left, right); // Sending to Merge - lists after dividing
 }
 
-static List<int> Merge(List<int> left, List<int> right) // Comparison - left list with rigth list, and add to result
+static List<int> Merge(List<int> left, List<int> right) // Merge function - left list with rigth list, and add to result
 {
     List<int> result = new List<int>(); //Creation - result list
 
@@ -52,6 +52,8 @@ static List<int> Merge(List<int> left, List<int> right) // Comparison - left lis
     }
     return result; // Return result
 }
+
+// Main
 
 List<int> originalList = new List<int>(); // Creation - original list
 List<int> sorted; // Creation - sort list
